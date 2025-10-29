@@ -1,0 +1,107 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #03cee1, #b1eff3);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../assets/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+/* ====== Main Container ====== */
+.weather-container {
+  background:  rgba(3, 190, 204, 0.678);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 5px 50px rgb(224, 246, 245);
+  width: 350px;
+  max-width: 90%;
+}
+
+/* ====== Title ====== */
+.weather-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* ====== Input Box ====== */
+.weather-container input {
+  padding: 10px 15px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* ====== Search Button ====== */
+.weather-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(15, 160, 170);;
+  color: white;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.weather-container button:hover {
+  background-color: rgb(9, 238, 226);;
+}
+
+/* ====== Weather Info Box ====== */
+.weather-info {
+  margin-top: 10px;
+  background:  rgba(4, 174, 186, 0.656);
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 30px rgb(147, 243, 238);
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ====== Responsive for Mobile ====== */
+@media (max-width: 480px) {
+  .weather-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .weather-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .weather-container button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
